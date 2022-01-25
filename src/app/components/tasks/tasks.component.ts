@@ -8,8 +8,8 @@ import { TASKS } from 'src/app/mock-tasks';
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
-
-tasks: Task[] = TASKS;
+  // Creo un array de tipo Task que contiene el valor de TASKS
+  tasks: Task[] = TASKS;
 
   constructor() { }
 
