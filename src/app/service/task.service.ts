@@ -3,13 +3,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Task } from 'src/app/Task';
 import { TASKS } from 'src/app/mock-tasks';
-/*
+
 const httpOptions = {
   headres: new HttpHeaders({
-    'content-Type': 'aplication/json'
+    'Content-Type': 'aplication/json'
   })
 }
-*/
+
 @Injectable({
   providedIn: 'root'
 })
@@ -34,6 +34,11 @@ export class TaskService {
     const url = `${this.apiUrl}/${task.id}`;
     return this.http.put<Task>(url, task);
 
+  }
+
+  addTask(task:Task): Observable<Task>{
+
+    return this.http.post<Task>(this.apiUrl, task);
   }
 
 }
