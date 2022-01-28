@@ -26,15 +26,15 @@
     },
     {
       "id": 5,
-      "text": "pepe",
-      "day": "Enero 26 a las 22hs",
-      "reminder": false
+      "text": "comprar palita",
+      "day": "hoy",
+      "reminder": true
     },
     {
       "id": 6,
-      "text": "Gercell",
-      "day": "fgfg",
-      "reminder": false
+      "text": "sadosky",
+      "day": "weee",
+      "reminder": true
     }
   ]
 }
